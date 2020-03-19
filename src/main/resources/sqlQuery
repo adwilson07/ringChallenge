@@ -1,0 +1,2 @@
+SELECT * from User INNER JOIN User ON User.StateId = State.stateId INNER JOIN User ON User.PermissionId = Permission.PermissionId
+WHERE State.StateName = "Colorado" And Permission.PermissionCode = "Admin";

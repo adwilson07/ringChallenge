@@ -1,0 +1,26 @@
+group 'org.test'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile(
+            'org.jsoup:jsoup:1.13.1',
+            'junit:junit:4.12',
+            "com.github.tomakehurst:wiremock:2.14.0",
+            'org.springframework.cloud:spring-cloud-contract-wiremock:1.2.1.RELEASE',
+            'io.rest-assured:rest-assured:3.0.0',
+            'org.hamcrest:hamcrest-junit:2.0.0.0',
+            'io.rest-assured:spring-mock-mvc:3.0.0',
+            'org.springframework.boot:spring-boot-starter-test:2.1.6.RELEASE',
+            'org.springframework:spring-jdbc:5.2.4.RELEASE',
+            'com.h2database:h2:1.4.194',
+    )
+}
